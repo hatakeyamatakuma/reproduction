@@ -1,2 +1,112 @@
 @charset "UTF-8";
 /*命名規則　BEM*/
+body {
+  font-family: "YuMincho";
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__profile {
+  font-size: 25px;
+  font-family: "Arial";
+  font-weight: bold;
+  color: white;
+  background-color: rgb(77, 70, 70);
+  padding: 5px 15px;
+}
+.header__about {
+  padding-right: 30px;
+}
+
+.mainVisual__image {
+  background-image: url(../img/mainvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.about {
+  text-align: center;
+}
+.about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.about__title {
+  display: inline-block;
+  font-size: 30px;
+  border-bottom: 1px solid;
+  margin-bottom: 50px;
+}
+.about__image {
+  background-image: url(../img/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+}
+.about__text {
+  padding-left: 30px;
+  text-align: left;
+}
+
+.bicycle {
+  text-align: center;
+}
+.bicycle__title {
+  display: inline-block;
+  font-size: 30px;
+  border-bottom: 1px solid;
+  margin-bottom: 50px;
+}
+.bicycle__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.bicycle--leftImage {
+  background-image: url(../img/bicycle1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 280px;
+  margin-right: 15px;
+}
+.bicycle--centerImage {
+  background-image: url(../img/bicycle2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 280px;
+  margin-right: 15px;
+}
+.bicycle--rightImage {
+  background-image: url(../img/bicycle3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 280px;
+  margin-right: 15px;
+}
+.bicycle--title {
+  font-size: 15px;
+}
+.bicycle__text {
+  font-size: 13px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 7px;
+}
