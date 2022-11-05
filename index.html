@@ -8,27 +8,33 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="header">
-        <div class="header__profile">Profile</div>
-        <div class="header__nav">
-          <div class="header__about">About</div>
-          <div class="header__bicycle">Bicycle</div>
-        </div>
-      </div>
-    </nav>
+  <header id="header" class="wrapper">
+        <h1 class="header__profile">
+          <a href="index.html">
+            <img src="https://placehold.jp/120x40.png" alt="profile">
+          </a>
+        </h1>
+        <nav>
+          <ul class="header__nav">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#bicycle">Bicycle</a>
+            </li>
+          </ul>
+        </nav>
   </header>
   <main>
-    <section class="mainVisual">
-      <div class="mainVisual__image"></div>
+    <section id="mainVisual">
+      <img src="https://placehold.jp/1280x600.png"></div>
     </section>
-    <section class="about">
-      <h1 class="about__title">About</h1>
+    <section id="about" class="wrapper">
+      <h2 class="about__title">About</h2>
       <div class="about__content">
-        <div class="about__image"></div>
+        <img src="https://placehold.jp/100x100.png">
         <div class="about__text">
-          <p>KAKERU MIYAICHI</p>
+          <h3 class="about__contentTitle">KAKERU MIYAICHI</h3>
           <p>テキストテキストテキストテキストテキストテキストテキスト
             <br>テキストテキストテキストテキストテキストテキストテキスト
             <br>テキストテキストテキストテキストテキストテキストテキスト
@@ -36,25 +42,25 @@
         </div>
       </div>
     </section>
-    <section class="bicycle">
-      <h1 class="bicycle__title">Bicycle</h1>
-      <div class="bicycle__content">
-        <div class="bicycle__block">
-          <img class="bicycle--leftImage">
-          <h2 class="bicycle--title">タイトルタイトル</h2>
+    <section id="bicycle" class="wrapper">
+      <h2 class="bicycle__title">Bicycle</h2>
+      <ul class="bicycle__content">
+        <li class="bicycle__block">
+          <img src="https://placehold.jp/300x200.png">
+          <h3 class="bicycle--title">タイトルタイトル</h3>
           <p class="bicycle__text">テキストテキストテキスト</p>
-        </div>
-        <div class="bicycle__block">
-          <img class="bicycle--centerImage">
-          <h2 class="bicycle--title">タイトルタイトル</h2>
+        </li>
+        <li class="bicycle__block">
+          <img src="https://placehold.jp/300x200.png">
+          <h3 class="bicycle--title">タイトルタイトル</h3>
           <p class="bicycle__text">テキストテキストテキスト</p>
-        </div>
-        <div class="bicycle__block">
-          <img class="bicycle--rightImage">
-          <h2 class="bicycle--title">タイトルタイトル</h2>
+        </li>
+        <li class="bicycle__block">
+          <img src="https://placehold.jp/300x200.png">
+          <h3 class="bicycle--title">タイトルタイトル</h3>
           <p class="bicycle__text">テキストテキストテキスト</p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="footer">

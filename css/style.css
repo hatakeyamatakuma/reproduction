@@ -1,64 +1,103 @@
 @charset "UTF-8";
 /*命名規則　BEM*/
-body {
-  font-family: "YuMincho";
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.header {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 10px;
+li {
+  list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 0.9rem;
+}
+
+img {
+  max-width: 100%;
+  border-style: none;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+#header li {
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+
 .header__nav {
   display: flex;
-  align-items: center;
+  padding: 10px 0;
 }
 .header__profile {
-  font-size: 25px;
-  font-family: "Arial";
-  font-weight: bold;
-  color: white;
-  background-color: rgb(77, 70, 70);
-  padding: 5px 15px;
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
 }
 .header__about {
   padding-right: 30px;
 }
 
-.mainVisual__image {
-  background-image: url(../img/mainvisual.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  margin-bottom: 50px;
+.wrapper {
+  max-width: 960px;
+  padding: 0 7%;
+  text-align: center;
+  margin: 0 auto 100px auto;
 }
 
-.about {
-  text-align: center;
+#mainVisual {
+  margin-bottom: 80px;
 }
+
+#mainVisual img {
+  height: 600px;
+  width: 100%;
+  max-width: 1920px;
+  object-fit: cover;
+}
+
+#about {
+  text-align: left;
+}
+#about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
 .about__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
 }
 .about__title {
   display: inline-block;
-  font-size: 30px;
-  border-bottom: 1px solid;
-  margin-bottom: 50px;
-}
-.about__image {
-  background-image: url(../img/about.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 100px;
-  height: 100px;
-  width: 100px;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #383e45;
+  margin-bottom: 60px;
 }
 .about__text {
-  padding-left: 30px;
   text-align: left;
+}
+.about__contentTitle {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+#bicycle li {
+  width: 32%;
 }
 
 .bicycle {
@@ -66,14 +105,14 @@ body {
 }
 .bicycle__title {
   display: inline-block;
-  font-size: 30px;
-  border-bottom: 1px solid;
-  margin-bottom: 50px;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #383e45;
+  margin-bottom: 60px;
 }
 .bicycle__content {
   display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
+  justify-content: space-between;
 }
 .bicycle--leftImage {
   background-image: url(../img/bicycle1.jpg);
@@ -100,7 +139,7 @@ body {
   margin-right: 15px;
 }
 .bicycle--title {
-  font-size: 15px;
+  font-size: 1rem;
 }
 .bicycle__text {
   font-size: 13px;
@@ -108,5 +147,6 @@ body {
 
 .footer {
   text-align: center;
-  font-size: 7px;
+  font-size: 0.5rem;
+  padding: 10px 0;
 }
